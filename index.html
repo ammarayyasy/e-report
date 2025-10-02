@@ -23,12 +23,18 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- my css -->
     <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown">
       <div class="container">
         <a class="navbar-brand d-flex align-items gap-2" href="#">
           <img src="assets/images/idn.png" alt="Logo" width="30" class="d-inline-block align-text-top rounded" />
@@ -61,10 +67,10 @@
     <!-- navbar end -->
 
     <!-- hero -->
-    <section id="hero">
+    <section id="hero" class="overflow-hidden">
       <div class="container">
         <div class="hero row flex-nowrap align-items-center justify-content-between flex-column gap-5 flex-md-row">
-          <div class="col text-center text-md-start">
+          <div class="col text-center text-md-start animate__animated animate__fadeInLeft animate__delay-1s">
             <h1 class="fw-bold">
               Selamat datang
               <br />
@@ -82,7 +88,7 @@
               <a href="" class="btn btn-outline-primary">Let's Start</a>
             </div>
           </div>
-          <div class="col d-flex justify-content-center justify-content-lg-end">
+          <div class="col d-flex justify-content-center justify-content-lg-end animate__animated animate__fadeInRight animate__delay-1s">
             <img src="assets/images/hero.png" alt="" />
           </div>
         </div>
@@ -95,12 +101,12 @@
       <div class="container">
         <div class="about row">
           <div class="col text-center">
-            <h1 class="fw-bold text-primary mb-4">Tentang Kami</h1>
-            <p class="lh-lg mb-5">
+            <h1 class="fw-bold text-primary mb-4" data-aos="fade-up" data-aos-duration="500">Tentang Kami</h1>
+            <p class="lh-lg mb-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sit temporibus itaque voluptatibus amet nesciunt eveniet sunt commodi expedita ea consequuntur exercitationem cum nobis,
               et mollitia repudiandae soluta earum reprehenderit.
             </p>
-            <img src="/assets/images/about.png" alt="" />
+            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" src="/assets/images/about.png" alt="" />
           </div>
         </div>
       </div>
@@ -111,21 +117,21 @@
     <section id="service">
       <div class="container">
         <div class="row mb-5">
-          <h1 class="fw-bold">Services</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas esse pariatur ipsa.</p>
+          <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="500">Services</h1>
+          <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas esse pariatur ipsa.</p>
         </div>
         <div class="row p-2 gap-3">
-          <div class="col p-4 shadow rounded-3 bg-primary text-primary-emphasis">
+          <div class="col p-4 shadow rounded-3 bg-primary text-primary-emphasis" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
             <i class="fa-solid fa-graduation-cap mb-3"></i>
             <h4 class="fw-bold mb-3 text-capitalize">Pengaduan Akademik</h4>
             <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem eos consectetur.</p>
           </div>
-          <div class="col p-4 shadow rounded-3 bg-primary text-primary-emphasis">
+          <div class="col p-4 shadow rounded-3 bg-primary text-primary-emphasis" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
             <i class="fa-solid fa-screwdriver-wrench mb-3"></i>
             <h4 class="fw-bold mb-3 text-capitalize">Pengaduan Fasilitas</h4>
             <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem eos consectetur.</p>
           </div>
-          <div class="col p-4 shadow rounded-3 bg-primary text-primary-emphasis">
+          <div class="col p-4 shadow rounded-3 bg-primary text-primary-emphasis" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
             <i class="fa-solid fa-user-secret mb-3"></i>
             <h4 class="fw-bold mb-3 text-capitalize">pengaduan anonymous</h4>
             <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem eos consectetur.</p>
@@ -139,11 +145,11 @@
     <section id="recent">
       <div class="container">
         <div class="mb-5 text-end">
-          <h1 class="fw-bold">Recent Report</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat fugiat labore.</p>
+          <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="500">Recent Report</h1>
+          <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat fugiat labore.</p>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
             <div class="card">
               <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
                 <a class="text-decoration-none text-white" href="">Akademik</a>
@@ -165,10 +171,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
             <div class="card">
               <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
-                <a class="text-decoration-none text-white" href="">Akademik</a>
+                <a class="text-decoration-none text-white" href="">Fasilitas</a>
               </div>
               <div style="max-height: 250px; overflow: hidden">
                 <img src="/assets/images/report.jpg" class="img-fluid object-cover object-center" alt="Foto Report" />
@@ -187,142 +193,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
             <div class="card">
               <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
-                <a class="text-decoration-none text-white" href="">Akademik</a>
-              </div>
-              <div style="height: 250px; overflow: hidden">
-                <img src="/assets/images/report-2.jpg" class="w-100 h-100" style="object-fit: cover; object-position: center center" alt="Foto Report" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p>
-                  <small>
-                    By:
-                    <a class="text-decoration-none" href="">Ammar Ayyasy</a>
-                    1 day ago
-                  </small>
-                </p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
-                <a class="text-decoration-none text-white" href="">Akademik</a>
-              </div>
-              <div style="height: 250px; overflow: hidden">
-                <img src="/assets/images/report-2.jpg" class="w-100 h-100" style="object-fit: cover; object-position: center center" alt="Foto Report" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p>
-                  <small>
-                    By:
-                    <a class="text-decoration-none" href="">Ammar Ayyasy</a>
-                    1 day ago
-                  </small>
-                </p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
-                <a class="text-decoration-none text-white" href="">Akademik</a>
-              </div>
-              <div style="max-height: 250px; overflow: hidden">
-                <img src="/assets/images/report.jpg" class="img-fluid object-cover object-center" alt="Foto Report" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p>
-                  <small>
-                    By:
-                    <a class="text-decoration-none" href="">Ammar Ayyasy</a>
-                    1 day ago
-                  </small>
-                </p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
-                <a class="text-decoration-none text-white" href="">Akademik</a>
-              </div>
-              <div style="height: 250px; overflow: hidden">
-                <img src="/assets/images/report-2.jpg" class="w-100 h-100" style="object-fit: cover; object-position: center center" alt="Foto Report" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p>
-                  <small>
-                    By:
-                    <a class="text-decoration-none" href="">Ammar Ayyasy</a>
-                    1 day ago
-                  </small>
-                </p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
-                <a class="text-decoration-none text-white" href="">Akademik</a>
-              </div>
-              <div style="height: 250px; overflow: hidden">
-                <img src="/assets/images/report-2.jpg" class="w-100 h-100" style="object-fit: cover; object-position: center center" alt="Foto Report" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p>
-                  <small>
-                    By:
-                    <a class="text-decoration-none" href="">Ammar Ayyasy</a>
-                    1 day ago
-                  </small>
-                </p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
-                <a class="text-decoration-none text-white" href="">Akademik</a>
-              </div>
-              <div style="max-height: 250px; overflow: hidden">
-                <img src="/assets/images/report.jpg" class="img-fluid object-cover object-center" alt="Foto Report" />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p>
-                  <small>
-                    By:
-                    <a class="text-decoration-none" href="">Ammar Ayyasy</a>
-                    1 day ago
-                  </small>
-                </p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5)">
-                <a class="text-decoration-none text-white" href="">Akademik</a>
+                <a class="text-decoration-none text-white" href="">Fasilitas</a>
               </div>
               <div style="height: 250px; overflow: hidden">
                 <img src="/assets/images/report-2.jpg" class="w-100 h-100" style="object-fit: cover; object-position: center center" alt="Foto Report" />
@@ -356,8 +230,8 @@
     <section id="faq">
       <div class="container">
         <div class="row text-center">
-          <h1 class="fw-bold text-primary mb-4">FAQ</h1>
-          <p class="lh-lg mb-5">
+          <h1 class="fw-bold text-primary mb-4" data-aos="fade-up" data-aos-duration="1000">FAQ</h1>
+          <p class="lh-lg mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sit temporibus itaque voluptatibus amet nesciunt eveniet sunt commodi expedita ea consequuntur exercitationem cum nobis, et
             mollitia repudiandae soluta earum reprehenderit.
           </p>
@@ -500,10 +374,13 @@
               Jalan Raya Jl. KH. Abdul Hamid No.02, RT.06
             </p>
           </div>
-
         </div>
         <div class="copyright text-white text-center">
-          <p>&copy; Copyright by <span class="fw-bold">RPL Class</span> 2025, All right reserved.</p>
+          <p>
+            &copy; Copyright by
+            <span class="fw-bold">RPL Class</span>
+            2025, All right reserved.
+          </p>
         </div>
       </div>
     </footer>
@@ -515,5 +392,11 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

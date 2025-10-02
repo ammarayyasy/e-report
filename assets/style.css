@@ -41,6 +41,14 @@ footer {
     margin-top: 100px;
 }
 
+#recent {
+    margin-top: 100px;
+}
+
+.hero .col:nth-child(1) {
+    --animate-delay: 0.5s;
+}
+
 @media (max-width: 1024px) {
     .hero .col img {
         width: 400px;
