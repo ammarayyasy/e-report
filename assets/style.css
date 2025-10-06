@@ -60,6 +60,10 @@ footer {
 }
 
 @media (max-width: 992px) {
+    section {
+        padding-top: 0;
+    }
+
     #hero {
         padding-top: 50px;
     }
