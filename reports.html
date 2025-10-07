@@ -70,11 +70,19 @@
     <section id="reports">
       <div class="container">
         <!-- judul -->
-        <div class="text-center mb-5">
-          <h1 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="500">All Reports</h1>
-          <p class="lh-lg text-secondary" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rerum quos veniam, exercitationem ex atque! Error, et? Corporis, exercitationem et.
-          </p>
+        <div class="d-flex justify-content-center justify-content-md-between align-items-center flex-wrap mb-5">
+          <div class="col-md-8 text-center text-md-start">
+            <h1 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="500">All Reports</h1>
+            <p class="lh-lg text-secondary" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rerum quos veniam, exercitationem ex atque! Error, et? Corporis, exercitationem et.
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-primary px-3" data-bs-toggle="modal" data-bs-target="#addModal">
+              <i class="fa-solid fa-plus me-1"></i>
+              Tambah Laporan
+            </button>
+          </div>
         </div>
 
         <!-- filter -->
@@ -320,6 +328,53 @@
       </div>
     </section>
     <!-- All Reports end -->
+
+    <!-- Tambah Report Modal -->
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel">
+              <i class="fa-solid fa-pen-to-square"></i>
+              Tambah Laporan Baru
+            </h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="">
+            <div class="modal-body p-md-5 p-3">
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="">Judul Laporan: </label>
+                <input class="form-control shadow-sm" type="text" placeholder="Masukkan judul laporan...">
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="">Pilih Kategori: </label>
+                <select class="form-select shadow-sm" name="" id="">
+                  <option value="">Pilih Kategori</option>
+                  <option value="akademik">Akademik</option>
+                  <option value="fasilitas">Fasilitas</option>
+                  <option value="anonymous">Anonymous</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="">Isi Laporan: </label>
+                <textarea class="form-control shadow-sm" name="" id="" rows="6" placeholder="Tulis laporan anda..."></textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="">Uploud Gambar: </label>
+                <input class="form-control shadow-sm" type="file" accept="image/*">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+                Kirim laporan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer class="bg-primary py-5">
